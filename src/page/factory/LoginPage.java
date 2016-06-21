@@ -20,8 +20,8 @@ public class LoginPage {
 	
 	@FindBy(linkText="Sign In")
 	WebElement signInLable;
-	
-	@FindBy(xpath="//html/body/div[4]/div/div/div[2]/div/div/div[1]/div/div/form/div[6]/button")
+		
+	@FindBy(css="Button.primary.submitButton.v3")
 	WebElement loginBtn;
 	
 	public LoginPage(WebDriver driver){

@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class ResultPage {
 	WebDriver driver;
 	
-	@FindBy(xpath="//*[@id=\"content\"]/div[4]/div/div/div[1]/div[1]/div[2]/div[1]/h1/span/span[1]/span[1]")
+	//@FindBy(xpath="//*[@id=\"content\"]/div[4]/div/div/div[1]/div[1]/div[2]/div[1]/h1/span/span[1]/span[1]")
+	@FindBy(className="street-address")
 	WebElement address;
 	
 	public ResultPage(WebDriver driver){

@@ -14,11 +14,11 @@ public class SearchPage {
 	
 	@FindBy(name="searchInputBox")
 	WebElement inputBox;
-	
-	@FindBy(xpath="//*[@id=\"content\"]/div[5]/div/section/div/div/div[1]/div/div[2]/div[1]/div/div/div/form/div/button")
+		
+	@FindBy(css=".inline-block.SearchButton.clickable.float-right")
 	WebElement searchBtn;
-	
-	@FindBy(xpath="//html/body/div[4]/div/div/div[2]/div/div/div[1]/div/div/div[2]/a")
+		
+	@FindBy(css=".item-title.block")
 	WebElement address;
 	
 	public SearchPage(WebDriver driver){
